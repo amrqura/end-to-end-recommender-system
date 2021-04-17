@@ -1,3 +1,11 @@
+# Description:
+
+This repo contains an end-to-end recommender system model. The code base will contains two main parts:
+* notebook: contains the modeling part(feature engineering and building recommender system model).
+* service: contains microservice code to serve the model and deploy it to AWS. 
+
+Here are some useful commands to run the code locally:
+
 # activate Virtual env:
 
 ```

@@ -1,5 +1,5 @@
 from flask import Flask
-from ContentBasedRecommender import ContentBasedRecommender
+from content_based_recommender import ContentBasedRecommender
 
 app = Flask(__name__)
 

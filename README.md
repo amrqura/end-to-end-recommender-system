@@ -22,6 +22,7 @@ jupyter lab &
 ```
 # Build docker image
 cd service
+
 docker build -t content-base-recommender .
 # run docker container
 docker run -d --publish 7777:5000 content-base-recommender
@@ -30,7 +31,7 @@ docker run -d --publish 7777:5000 content-base-recommender
 http://localhost:7777/recommend/-1479311724257856983
 
 
-aws configure set region eu-west-1 --profile personal
+aws configure set region eu-west-1
 aws ecr  --region eu-west-1 create-repository --repository-name ecs-recommener-system/home
 
 $(aws ecr get-login  --region eu-west-1 --no-include-email)

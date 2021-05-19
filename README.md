@@ -32,10 +32,10 @@ http://localhost:7777/recommend/-1479311724257856983
 
 
 aws configure set region eu-west-1
-aws ecr  --region eu-west-1 create-repository --repository-name ecs-recommener-system/home
+aws ecr  --region eu-west-1 create-repository --repository-name ecs-recommender-system/home
 
 $(aws ecr get-login  --region eu-west-1 --no-include-email)
 
-docker tag content-base-recommender:latest 477557400504.dkr.ecr.eu-west-1.amazonaws.com/ecs-recommener-system/home:latest
+docker tag content-base-recommender:latest 477557400504.dkr.ecr.eu-west-1.amazonaws.com/ecs-recommender-system/home:latest
 
-docker push 477557400504.dkr.ecr.eu-west-1.amazonaws.com/ecs-recommener-system/home:latest
+docker push 477557400504.dkr.ecr.eu-west-1.amazonaws.com/ecs-recommender-system/home:latest
